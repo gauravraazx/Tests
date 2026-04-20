@@ -572,9 +572,9 @@
           addLog('Adsgram SDK not found. Check network.', 'error');
           return;
         }
-        AdController = window.Adsgram.init({ blockId: 'int-28100' });
-        setStatus('<strong>Ready</strong> — Zone int-28100 initialized');
-        addLog('AdController initialized → blockId: int-28100', 'success');
+        AdController = window.Adsgram.init({ blockId: '28100' });
+        setStatus('<strong>Ready</strong> — Zone 28100 initialized');
+        addLog('AdController initialized → blockId: 28100', 'success');
       } catch (e) {
         setStatus('<strong>Init Failed</strong> — ' + e.message, 'error');
         addLog('Init error: ' + e.message, 'error');
